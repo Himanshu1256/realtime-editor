@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# realtime-editor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Syntax Sphere** is a real-time code editor developed during a summer internship at Celebal Technologies. Built with React JS, Node JS, WebSockets, Express JS, and Socket.io.
+It allows multiple users to collaborate on code simultaneously with low latency and high performance.
 
-## Available Scripts
+**Important steps** to run this web application:-                         
+1. To install required node modules, run - **npm install** in terminal
+2. After node modules are installed in **node_modules** folder, still one module will be left to installed i.e. **codemirror** which has to be installed manually in this project.  
+3. To install **codemirror module** firstly run - **npm config set legacy-peer-deps true**, then run - **npm i codemirror@version5**. Then codemirror module should be installed in node_modules folder
+5.  After all the node modules are installed successfully, type **yarn start** in terminal to *launch the web application on port no. 3000*.
+6. After web application is launced, type **yarn sever:dev** in terminal to *start the server* successfully.
 
-In the project directory, you can run:
+ 
 
-### `npm start`
+**Working of Syntax Sphere web application:-**  
+1. Click on **new room** button to generate new room ID, to create a room. Enter your username in the provided field.
+2. **Connected users**c will be displayed on left hand side, and code editor is provided on right hand side. 
+3. Click on **Copy ROOM ID** to copy current room ID to share to other users.
+4. Now **open the login page in new tab** and paste the copied ROOM ID for new user to join. 
+5. The code within the room can be written and edited by both users in real-time, ensuring seamless collaboration and immediate updates.   
+      
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Basic Features:-**
+1. **Real-Time Code Editing**: Allows simultaneous editing by multiple users.
+2. **Syntax Highlighting**: Supports syntax highlighting for popular languages.
+3. **Version Control**: Tracks changes and revisions for easy rollbacks.
+4. **Chat Functionality**: Enables real-time communication between collaborators.
+5. **User Authentication**: Provides secure signup, login, and logout.
+6. **Code Snippet Sharing**: Allows optional sharing of code snippets. 
