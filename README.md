@@ -7,8 +7,9 @@ It allows multiple users to collaborate on code simultaneously with low latency 
 1. To install required node modules, run - **npm install** in terminal
 2. After node modules are installed in **node_modules** folder, still one module will be left to installed i.e. **codemirror** which has to be installed manually in this project.  
 3. To install **codemirror module** firstly run - **npm config set legacy-peer-deps true**, then run - **npm i codemirror@version5**. Then codemirror module should be installed in node_modules folder
-5.  After all the node modules are installed successfully, type **yarn start** in terminal to *launch the web application on port no. 3000*.
-6. After web application is launced, type **yarn sever:dev** in terminal to *start the server* successfully.
+4.  After all the node modules are installed successfully, type **yarn start** in terminal to *launch the web application on port no. 3000*. After web application is launced, type **yarn sever:dev** in terminal to *start the server* successfully. If yarn is installed in the system, run - **npm install -g yarn**.
+5.  **If yarn is not working on the system, use this approach**:- **Alternatively** to run using npm, run - **npm start** to lauch the web application, after web application is launced run - **npm run server:dev** to start the server
+
 
  
 
